@@ -4,9 +4,10 @@ import threading
 connections = {}
 
 def main():
+    print ("YAY")
     # Change to environment variables?
     address = ("0.0.0.0", 8008)
-    server = socker.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     server.bind(address)
     server.listen(1)
